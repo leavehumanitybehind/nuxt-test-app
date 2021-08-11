@@ -154,6 +154,7 @@ textarea {
   padding: 10px 16px;
   outline: none;
   font-size: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 
   &:hover,
   &:focus {
