@@ -108,6 +108,7 @@ export default {
     width: 32px;
     height: 32px;
     cursor: pointer;
+    text-align: center;
   }
   &:hover .card__btn {
     opacity: 1;

@@ -159,6 +159,7 @@ textarea {
   &:hover,
   &:focus {
     outline: 1px solid rgb(108, 108, 230);
+    border: none;
   }
 }
 
