@@ -44,6 +44,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .cards {
+  justify-content: center;
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(2, 332px);

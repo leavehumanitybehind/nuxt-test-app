@@ -34,12 +34,7 @@
         type="number"
       />
     </div>
-    <button
-      type="submit"
-      :disabled="$v.$invalid"
-      @click="resetField"
-      class="form__btn"
-    >
+    <button type="submit" :disabled="$v.$invalid" class="form__btn">
       Добавить товар
     </button>
   </form>
@@ -155,6 +150,7 @@ textarea {
   border: none;
   padding: 10px 16px;
   outline: none;
+  font-size: 16px;
 
   &:hover,
   &:focus {
