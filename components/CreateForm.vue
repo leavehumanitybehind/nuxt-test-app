@@ -102,6 +102,7 @@ export default {
   @media (min-width: 1124px) {
     position: sticky;
     top: 5%;
+    margin: 0 16px;
   }
 }
 
