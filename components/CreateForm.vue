@@ -34,7 +34,12 @@
         type="number"
       />
     </div>
-    <button type="submit" :disabled="$v.$anyError" class="form__btn">
+    <button
+      type="submit"
+      :disabled="$v.$invalid"
+      @click="resetField"
+      class="form__btn"
+    >
       Добавить товар
     </button>
   </form>
@@ -73,11 +78,10 @@ export default {
       this.price = "";
     },
     submitData() {
-      this.$v.$touch();
       if (this.$v.$invalid) {
+        this.$v.$touch();
         return;
       }
-
       this.$store.commit("cards/addCard", {
         title: this.name,
         description: this.desc,
