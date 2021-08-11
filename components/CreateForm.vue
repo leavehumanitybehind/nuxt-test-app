@@ -76,13 +76,16 @@ export default {
       if (this.$v.$invalid) {
         this.$v.$touch();
         return;
+      } else {
+        this.$store.commit("cards/addCard", {
+          title: this.name,
+          description: this.desc,
+          img: this.imgLink,
+          price: this.price,
+        });
+
+        this.resetField();
       }
-      this.$store.commit("cards/addCard", {
-        title: this.name,
-        description: this.desc,
-        img: this.imgLink,
-        price: this.price,
-      });
     },
   },
 };

@@ -44,13 +44,14 @@ export default {
 </script>
 <style lang="scss" scoped>
 .cards {
-  justify-content: center;
+ margin: 0 auto;
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(2, 332px);
     grid-auto-rows: 1fr;
     grid-column-gap: 30px;
-    grid-row-gap: 30px;
+    grid-row-gap: 30px; 
+    justify-content: center;
   }
 
   @media (min-width: 1124px) {
