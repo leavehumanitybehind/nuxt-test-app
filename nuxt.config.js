@@ -1,6 +1,10 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
+  target: 'static',
+  router: {
+    base: '/next-text-app/'
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
