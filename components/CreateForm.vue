@@ -98,13 +98,13 @@ export default {
     0px 6px 10px rgba(0, 0, 0, 0.02);
   border-radius: 4px;
   padding: 24px;
-  margin-right: 16px;
   text-align: left;
 
   @media (min-width: 1124px) {
     position: sticky;
     top: 5%;
     margin: 0 16px;
+    margin-right: 16px;
   }
 }
 
